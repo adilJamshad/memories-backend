@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import PostRoutes from "./routes/posts.js";
+import UserRoutes from "./routes/users.js";
+
 import dotenv from 'dotenv';
 
 const app = express();
@@ -15,6 +17,7 @@ app.use(cors());
 
 // you will get errors or warnings in console if you don't add this object
 app.use("/posts", PostRoutes)
+app.use('/user', UserRoutes)
 app.get('/', (req, res) => {
     res.send("Hello to  my memories app!")
 });

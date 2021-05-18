@@ -22,7 +22,6 @@ app.get('/', (req, res) => {
     res.send("Hello to  my memories app!")
 });
 
-//const ConnectURL = 'mongodb+srv://firstMongoDB:Welcome12@cluster0.1iiwm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 const PORT = process.env.PORT;
 
